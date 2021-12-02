@@ -1,0 +1,16 @@
+@use "./styles/modal.scss";
+@use "./styles/search.scss";
+@use "./styles/color.scss" as color;
+@use "./styles/bookcards.scss";
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Righteous&family=Teko:wght@300;400;500;600;700&display=swap");
+
+* {
+    font-family: color.$primary-font;
+}
+h1 {
+    font-size: 8rem;
+    color: color.$fourth-color;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+
+    // color: #00adb5;
+}

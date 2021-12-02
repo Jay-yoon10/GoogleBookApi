@@ -1,0 +1,66 @@
+@use "./color.scss" as color;
+.book-search-box {
+    box-sizing: border-box;
+}
+// Search bar----------------
+
+*#search-input::before,
+*#search-input::after {
+    box-sizing: inherit;
+}
+
+// Main styles
+form {
+    position: relative;
+    width: 40rem;
+    height: 4rem;
+    background: #393e46;
+    border-radius: 0.7rem;
+}
+input,
+.btn {
+    height: 4rem;
+
+    border: 0;
+    color: color.$third-color;
+    text-shadow: 2px 1px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+    font-size: 2.5rem;
+}
+input[type="search"] {
+    width: 100%;
+    background: color.$secondary-color;
+    padding: 0 1.6rem;
+    border-radius: 0.7rem;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+.btn {
+    display: none;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    width: 6rem;
+    font-weight: bold;
+    background: color.$fourth-color;
+    border-radius: 0 0.7rem 0.7rem 0;
+}
+input:not(:placeholder-shown) {
+    border-radius: 0.7rem 0 0 0.7rem;
+    width: calc(100% - 6rem);
+    + .btn {
+        display: block;
+    }
+}
+label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
