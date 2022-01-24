@@ -1,5 +1,5 @@
 # GoogleBookApi
-Book finding app with HTML, SCSS and JavaScript DOM.
+Book finding app with HTML, SCSS and JavaScript DOM, fetching Google books Api using promise(async/await).
 
 ### 1. Initial Screen
 ![BookApi1](https://user-images.githubusercontent.com/93105607/150766308-a02f3550-edd2-4d3b-a6c1-11f229075351.JPG)
